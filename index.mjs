@@ -1,5 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
+import { connectToMongoDB, db } from './db/conn.mjs'; 
+
 dotenv.config();
 
 const PORT = process.env.PORT || 5050;

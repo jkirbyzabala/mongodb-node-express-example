@@ -16,7 +16,7 @@ async function connectToMongoDB() {
   try {
     await client.connect();
     console.log('Connected to MongoDB');
-    db = client.db("sample_mflix"); // Replace with your database name
+    db = client.db("sample_mflix"); 
   } catch (error) {
     console.error('Error connecting to MongoDB:', error);
     throw error;
